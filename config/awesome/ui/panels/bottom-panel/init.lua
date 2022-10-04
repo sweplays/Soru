@@ -12,7 +12,7 @@ return function(s)
 
     --- Widgets
     --- ~~~~~~~
-    s.start_menu = require "ui.panels.bottom-panel.start_menu"
+    s.start_menu = require "ui.panels.bottom-panel.start_menu"()
 
     --- Systray
 	--- ~~~~~~~
@@ -74,6 +74,10 @@ return function(s)
         bg = beautiful.transparent,
         widget = {
             {
+				{
+					s.start_menu,
+					layout = wibox.layout.fixed.horizontal
+				},
                 left = dpi(10),
                 right = dpi(10),
                 widget = wibox.container.margin

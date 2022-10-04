@@ -12,9 +12,71 @@ local themes_path = gfs.get_themes_dir()
 local theme = {}
 
 theme.font          = "sans 8"
+theme.icon_font     = "Material Icons "
+
+--- Special
+theme.white = "#edeff0"
+theme.darker_black = "#060809"
+theme.black = "#0c0e0f"
+theme.lighter_black = "#121415"
+theme.one_bg = "#161819"
+theme.one_bg2 = "#1f2122"
+theme.one_bg3 = "#27292a"
+theme.grey = "#343637"
+theme.grey_fg = "#3e4041"
+theme.grey_fg2 = "#484a4b"
+theme.light_grey = "#505253"
+
+theme.transparent = "#00000000"
+
+--- Black
+theme.color0 = "#232526"
+theme.color8 = "#2c2e2f"
+
+--- Red
+theme.color1 = "#df5b61"
+theme.color9 = "#e8646a"
+
+--- Green
+theme.color2 = "#78b892"
+theme.color10 = "#81c19b"
+
+--- Yellow
+theme.color3 = "#de8f78"
+theme.color11 = "#e79881"
+
+--- Blue
+theme.color4 = "#6791c9"
+theme.color12 = "#709ad2"
+
+--- Magenta
+theme.color5 = "#bc83e3"
+theme.color13 = "#c58cec"
+
+--- Cyan
+theme.color6 = "#67afc1"
+theme.color14 = "#70b8ca"
+
+--- White
+theme.color7 = "#e4e6e7"
+theme.color15 = "#f2f4f5"
 
 theme.wibar_bg      = "#101213"
 theme.wibar_height  = dpi(40)
+
+function theme.random_accent_color()
+	local accents = {
+		theme.color9,
+		theme.color10,
+		theme.color11,
+		theme.color12,
+		theme.color13,
+		theme.color14,
+	}
+
+	local i = math.random(1, #accents)
+	return accents[i]
+end
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
