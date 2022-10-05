@@ -9,7 +9,7 @@ local icons = require("icons")
 local config = require "config.config"
 
 return function(s)
-    s.central_panel = awful.wibar({
+    s.central_panel = wibox({
 		type = "dock",
 		screen = s,
 		height = dpi(700),

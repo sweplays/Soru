@@ -13,7 +13,7 @@ return function(s)
     --- Widgets
     --- ~~~~~~~
     s.start_menu = require "ui.panels.bottom-panel.start_menu"(s)
-	s.clock = require "ui.panels.bottom-panel.clock"()
+	s.clock = require "ui.panels.bottom-panel.clock"(s)
 	s.battery = require "ui.panels.bottom-panel.battery"()
 	s.network = require "ui.panels.bottom-panel.network"()
 

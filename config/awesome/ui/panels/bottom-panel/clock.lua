@@ -5,9 +5,10 @@ local wbutton = require "ui.widgets.button"
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
-return function()
+return function(s)
     local accent_color = beautiful.white
     local clock = wibox.widget({
+        screen = s,
         widget = wibox.widget.textclock,
         format = "%a%e %b |%l:%M %p",
         align = "center",
