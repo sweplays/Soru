@@ -24,6 +24,7 @@ local function button(args, type)
 	args.image_valign = args.image_valign or "center"
 	args.horizontal_fit_policy = args.horizontal_fit_policy or "auto"
 	args.vertical_fit_policy = args.vertical_fit_policy or "auto"
+	args.stylesheet = args.stylesheet or nil
 	args.image = args.image or nil
 
 	local image_widget = wibox.widget({
@@ -35,6 +36,7 @@ local function button(args, type)
 		horizontal_fit_policy = args.horizontal_fit_policy,
 		vertical_fit_policy = args.vertical_fit_policy,
 		resize = true,
+		stylesheet = args.stylesheet,
 		image = args.image,
 	})
 
