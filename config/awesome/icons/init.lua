@@ -29,5 +29,4 @@ return {
 	charging = dir .. "charging.svg",
 	web_browser = dir .. "firefox.svg",
 	awesome_logo = dir .. "awesome-logo.svg",
-	start_menu = dir .. "start-menu.svg"
 }

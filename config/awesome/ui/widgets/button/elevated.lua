@@ -36,7 +36,7 @@ local function button(args)
 	args.forced_width = args.forced_width or nil
 	args.forced_height = args.forced_height or nil
 	args.margins = args.margins or dpi(0)
-	args.paddings = args.paddings or dpi(6)
+	args.paddings = args.paddings or dpi(10)
 	args.halign = args.halign or "center"
 	args.valign = args.valign or "center"
 
